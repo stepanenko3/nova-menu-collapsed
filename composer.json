@@ -1,47 +1,44 @@
 {
-  "name": "stepanenko3/nova-menu-collapsed",
-  "description": "This Laravel Nova package allows you to set menu state collapsed as default",
-  "keywords": [
-    "laravel",
-    "nova",
-    "menu"
-  ],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Artem Stepanenko",
-      "email": "work.stpnnk@gmail.com",
-      "role": "Maintainer"
-    }
-  ],
-  "require": {
-    "php": ">=8.0",
-    "laravel/nova": "^4.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^7.0",
-    "phpunit/phpunit": "^9.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Stepanenko3\\NovaMenuCollapsed\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Stepanenko3\\NovaMenuCollapsed\\Tests\\": "tests"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Stepanenko3\\NovaMenuCollapsed\\MenuCollapsedServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "stepanenko3/nova-menu-collapsed",
+    "description": "This Laravel Nova package allows you to set menu state collapsed as default",
+    "keywords": [
+        "laravel",
+        "nova",
+        "menu"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Stepanenko",
+            "email": "work.stpnnk@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/nova": "^4.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../nova"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Stepanenko3\\NovaMenuCollapsed\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Stepanenko3\\NovaMenuCollapsed\\MenuCollapsedServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
