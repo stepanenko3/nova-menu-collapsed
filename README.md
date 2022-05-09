@@ -1,5 +1,9 @@
 # Nova Menu Collapsed
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stepanenko3/nova-menu-collapsed.svg?style=flat-square)](https://packagist.org/packages/stepanenko3/nova-menu-collapsed)
+[![Total Downloads](https://img.shields.io/packagist/dt/stepanenko3/nova-menu-collapsed.svg?style=flat-square)](https://packagist.org/packages/stepanenko3/nova-menu-collapsed)
+[![License](https://poser.pugx.org/stepanenko3/nova-menu-collapsed/license)](https://packagist.org/packages/stepanenko3/nova-menu-collapsed)
+
 This tool gives you the ability to set the default collapse state for Nova 4.0 menu items.
 
 ## Requirements
