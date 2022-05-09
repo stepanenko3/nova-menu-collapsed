@@ -35,7 +35,7 @@ public function tools()
 {
     return [
         // ...
-        new \Stepanenko3\NovaMenuCollapsed\MenuCollapsedTool,
+        new \Stepanenko3\NovaMenuCollapsed\MenuCollapsed,
     ];
 }
 ```

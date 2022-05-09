@@ -7,13 +7,6 @@
         "menu"
     ],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Artem Stepanenko",
-            "email": "work.stpnnk@gmail.com",
-            "role": "Maintainer"
-        }
-    ],
     "require": {
         "php": ">=8.0",
         "laravel/nova": "^4.0"
@@ -32,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Stepanenko3\\NovaMenuCollapsed\\MenuCollapsedServiceProvider"
+                "Stepanenko3\\NovaMenuCollapsed\\ToolServiceProvider"
             ]
         }
     },
