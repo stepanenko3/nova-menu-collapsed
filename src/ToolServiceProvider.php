@@ -13,11 +13,16 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([__DIR__ . '/../config' => config_path()], 'nova-menu-collapsed-config');
+        if ($this->app->runningInConsole()) {
+            // Publish config
+            $this->publishes([
+                __DIR__ . '/../config/' => config_path(),
+            ], 'config');
+        }
 
         $this->mergeConfigFrom(
             __DIR__ . '/../config/nova-menu-collapsed.php',
-            'nova-menu-collapsed',
+            'nova-menu-collapsed'
         );
     }
 
