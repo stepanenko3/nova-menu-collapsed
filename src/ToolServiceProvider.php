@@ -13,6 +13,21 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->config();
+    }
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
+    private function config()
+    {
         if ($this->app->runningInConsole()) {
             // Publish config
             $this->publishes([
@@ -24,15 +39,5 @@ class ToolServiceProvider extends ServiceProvider
             __DIR__ . '/../config/nova-menu-collapsed.php',
             'nova-menu-collapsed'
         );
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 }
