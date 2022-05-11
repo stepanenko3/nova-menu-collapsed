@@ -9,7 +9,7 @@ function setMenuItemCollapsed(menuItem, collapsed = true) {
 
 function collapseMenuRecursive(menu) {
     menu
-        .filter(menuItem => menuItem.items && menuItem.items.length > 0)
+        .filter(menuItem => menuItem.collapsable && menuItem.items && menuItem.items.length > 0)
         .forEach(menuItem => {
             setMenuItemCollapsed(menuItem);
 
