@@ -22,8 +22,7 @@ Install the package in a Laravel Nova project via Composer and edit the configur
 composer require stepanenko3/nova-menu-collapsed
 
 # Publish the configuration file and edit it to your preference
-# NB! If you want custom table names, configure them before running the migrations.
-php artisan vendor:publish --tag=nova-menu-builder-config
+php artisan vendor:publish --provider="Stepanenko3\NovaMenuCollapsed\ToolServiceProvider" --tag="config"
 ```
 
 Register the tool with Nova in the `tools()` method of the `NovaServiceProvider`:
@@ -42,7 +41,7 @@ public function tools()
 
 ### Setting up
 
-After publishing the configuration file, you have to make some required changes in the config:
+After publishing the configuration file, you have to make some required changes in `config/nova-menu-collapsed.php`:
 
 ```php
 'collapsed' => true,
