@@ -11,9 +11,7 @@ This tool gives you the ability to set the default collapse state for Nova 4.0 m
 - `php: >=8.0`
 - `laravel/nova: ^4.0`
 
-## Installation and Setup
-
-### Installing the package
+## Installation
 
 Install the package in a Laravel Nova project via Composer and edit the configuration file
 
