@@ -7,23 +7,20 @@ function setMenuItemCollapsed(menuItem, collapsed = true) {
     localStorage.setItem(key, collapsed);
 }
 
-function collapseMenuRecursive(menu) {
+function collapseMenuRecursive(menu, collapsed = true) {
     menu
         .filter(menuItem => menuItem.collapsable && menuItem.items && menuItem.items.length > 0)
         .forEach(menuItem => {
-            setMenuItemCollapsed(menuItem);
+            setMenuItemCollapsed(menuItem, collapsed);
 
             if (menuItem.items.length > 0) {
-                collapseMenuRecursive(menuItem.items);
+                collapseMenuRecursive(menuItem.items, collapsed);
             }
         });
 }
 
 Nova.booting(function () {
-    if (!Nova.config('novaMenuCollapsed'))
-        return;
-
     const menu = Nova.config('mainMenu');
 
-    collapseMenuRecursive(menu);
+    collapseMenuRecursive(menu, Nova.config('novaMenuCollapsed'));
 });
